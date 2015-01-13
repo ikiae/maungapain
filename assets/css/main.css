@@ -210,7 +210,12 @@ main .main__title{
     padding: 0.5em 0;
 }
 
-
+main .about{
+  width: 80%;
+  margin: 2em auto;
+  padding: 1em 4em;
+  background: #ffffff;
+}
 /* ========
    Form
    ======== */
