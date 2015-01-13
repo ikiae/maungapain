@@ -101,6 +101,9 @@ a{
    font-family: bebas; 
 }
 
+textarea{
+  font-family: bebas;
+}
 
 /* ========
    Header
@@ -196,7 +199,49 @@ header .main__table--right{
 main{
     width: 100%;
     background-color: #dddddd;
-    min-height: 600px;
+    min-height: 900px;
+    font-family: bebas;
+}
+
+main .main__title{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 3em;
+    padding: 0.5em 0;
+}
+
+
+/* ========
+   Form
+   ======== */
+.form{
+  margin: 1em auto;
+  width: 60%;
+}
+
+.form span{
+  color: #f00;
+}
+
+.form__row{
+    width: 60%;
+    position: relative;
+    margin: 1em auto;
+}
+/*label{
+  text-align: right;
+  width: 200px;
+}*/
+.form__row__label{
+  width: 40%;
+  margin-right: 1em;
+  text-align: right;
+}
+
+.form__row__input{
+  width: 50%;
+  margin-right: 1em;
+  text-align: right;
 }
 
 /*-----Slider---------------------------------------------------*/
