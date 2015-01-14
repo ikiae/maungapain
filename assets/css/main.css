@@ -80,7 +80,7 @@ fieldset {
 
 textarea {
     resize: vertical;
-    font-family: bebas;
+    font-family: 'Ostrich Sans';
 }
 
 /* ==========================================================================
@@ -98,11 +98,11 @@ textarea {
    Author's custom styles
    ========================================================================== */
 a{
-   font-family: bebas; 
+   /*font-family: 'Ostrich Sans'; */
+   font-family: 'Open Sans';
 }
 
 textarea{
-  font-family: bebas;
 }
 
 /* ========
@@ -120,9 +120,6 @@ header{
     width: 100%;
     height: 60px;
     border-bottom: 0.1em solid #000;
-    -webkit-box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
     z-index: 1;
 }
 
@@ -144,6 +141,7 @@ header .main__search {
   height: 30px;
   position: absolute;
   margin: 0.2em 10% 0 12%;
+  font-family: 'Open Sans';
 }
 
 header ul{
@@ -157,26 +155,27 @@ header .main__table li {
 }
 
 header .main__table a {
-    font-weight: bold;
     color: #fff;
     text-decoration: none;
     display: inline-block;
     margin: 0;
     padding: 0.5em;
+    /*transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;*/
 }
 
 header .main__table .main__table__tab {
-    /*display: inline-block;*/
     position: relative;
-}
-
-header .main__table li:hover {
-    background: #fff;
 }
 
 header .main__table a:hover {
     background: #fff;
     color: #d50000;
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
 }
 
 header .main__table--left{
@@ -191,7 +190,23 @@ header .main__table--right{
     position: relative;
 }
 
+header .main__search{
+    opacity: 0.5;
+    webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
 
+header .main__search:hover{
+    opacity: 1;
+}
+
+header .main__search:focus{
+    /*color: transparent;*/
+}
 /* ========
    Main
    ======== */
@@ -200,7 +215,12 @@ main{
     width: 100%;
     background-color: #dddddd;
     min-height: 900px;
-    font-family: bebas;
+    /*font-family: 'Lane';*/
+    /*font-family: sans-serif;*/
+    font-family: 'Open Sans';
+    /*font-family: monospace;*/
+    /*font-size: 1.5em;*/
+    /*font-weight: bold;*/
 }
 
 main .main__title{
@@ -232,13 +252,11 @@ main .about{
     width: 60%;
     position: relative;
     margin: 1em auto;
+    font-size: 1.2em;
 }
-/*label{
-  text-align: right;
-  width: 200px;
-}*/
+
 .form__row__label{
-  width: 40%;
+  width: 200px;
   margin-right: 1em;
   text-align: right;
 }
@@ -246,21 +264,26 @@ main .about{
 .form__row__input{
   width: 50%;
   margin-right: 1em;
-  text-align: right;
+  
+}
+
+.btn{
+  font-family: 'Open Sans';
 }
 
 /*-----Slider---------------------------------------------------*/
 main .slider {
   display: block;
-  /*background: #ffa726;*/
-  /*height: 800px;*/
 }
+
 main .slider .bx-wrapper {
   margin-bottom: 0;
 }
+
 main .slider .bx-wrapper .bx-pager.bx-default-pager {
   bottom: 40px;
 }
+
 main .slider .bx-wrapper .bx-viewport {
   border: 0;
   -webkit-box-shadow: 0 0 0 #000;
@@ -381,22 +404,9 @@ footer .footer__cp{
     padding: 1em;
     font-size: 1em;
     line-height: 1.5em;
-    font-family: bebas;
+    font-family: 'Open Sans';
     color: #eeeeee;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* ==========================================================================
