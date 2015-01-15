@@ -391,15 +391,14 @@ main .slider__image__text button {
   border: none;
 }
 
-/*-----Blog-----------------------------------------------------*/
-main .blog {
-  background: #42bd41;
+/*-----event-----------------------------------------------------*/
+main .event {
   min-height: 500px;
   text-align: center;
-  padding: 3em 0;
+  /*padding: 3em 0;*/
 }
 
-main .blog__more {
+main .event__more {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -407,76 +406,84 @@ main .blog__more {
   font-size: 1.5em;
   text-align: right;
 }
-main .blog__more a {
+main .event__more a {
   color: #000;
 }
-main .blog__more a:hover {
+main .event__more a:hover {
   color: #00c;
 }
 
-main .blog__cont {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3%;
-  margin-bottom: 1.5em;
-  padding: 1em;
+main .event__cont {
+  /*display: block;*/
+  /*width: 90%;*/
+  /*margin-left: auto;
+  margin-right: auto;*/
+  /*margin-top: 3%;
+  margin-bottom: 1.5em;*/
+  /*padding: 1em;*/
+  padding: 0;
 }
 
-main .blog__title {
+main .event__title {
   font-size: 3em;
   display: block;
   margin-top: 5%;
 }
 
-main .blog__cont__detail {
+main .event__cont__detail {
+  background: #333333;
+  color: #ffffff;
   display: inline-block;
-  width: 40%;
-  height: 80%;
-  margin: 0 2.5em;
-  background: #a3e9a4;
+  width: 24%;
+  /*height: 80%;*/
   text-align: center;
-  z-depth: 3;
 }
-main .blog__cont__detail span {
+
+main .event__cont__detail span {
   display: block;
 }
 
-main .blog__cont__detail__imgcon {
-  margin-top: 10%;
+main .event__cont__detail__imgcon {
+  /*margin-top: 10%;*/
   display: block;
-  width: 90%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
-main .blog__cont__detail--left {
-  text-align: left;
-  color: #000;
+main .event__cont__detail__imgcon img{
+  width: 100%;
 }
 
-main .blog__cont__detail--title {
-  margin-top: 10%;
+main .event__cont__detail--left {
+  text-align: left;
+  color: #fff;
+}
+
+main .event__cont__detail--title {
+  margin-top: 5%;
   font-size: 1.5em;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
 
-main .blog__cont__detail--text {
-  margin: 5% auto;
+main .event__cont__detail--text {
+  margin: 0 auto;
   width: 90%;
-  color: #000;
+  color: #fff;
+  font-size: 0.85em;
 }
 
-main .blog__cont__detail--link {
+main .event__cont__detail--link {
   text-align: left;
+  margin-bottom: 5%;
 }
-main .blog__cont__detail--link a {
-  color: #000;
+main .event__cont__detail--link a {
+  color: #fff;
 }
-main .blog__cont__detail--link a:hover {
-  color: #00c;
+main .event__cont__detail--link a:hover {
+  color: #fff;
 }
 
 
