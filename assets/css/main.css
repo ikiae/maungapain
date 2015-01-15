@@ -101,6 +101,7 @@ textarea {
 a{
    /*font-family: 'Ostrich Sans'; */
    font-family: 'Open Sans';
+   /*color: #fff;*/
 }
 
 textarea{
@@ -395,7 +396,6 @@ main .slider__image__text button {
 main .event {
   min-height: 500px;
   text-align: center;
-  /*padding: 3em 0;*/
 }
 
 main .event__more {
@@ -406,6 +406,7 @@ main .event__more {
   font-size: 1.5em;
   text-align: right;
 }
+
 main .event__more a {
   color: #000;
 }
@@ -421,7 +422,7 @@ main .event__cont {
   /*margin-top: 3%;
   margin-bottom: 1.5em;*/
   /*padding: 1em;*/
-  padding: 0;
+  margin: 1em auto;
 }
 
 main .event__title {
@@ -434,8 +435,9 @@ main .event__cont__detail {
   background: #333333;
   color: #ffffff;
   display: inline-block;
-  width: 24%;
-  /*height: 80%;*/
+  width: 22%;
+  margin: 0 1em;
+  top: 0;
   text-align: center;
 }
 
@@ -444,11 +446,15 @@ main .event__cont__detail span {
 }
 
 main .event__cont__detail__imgcon {
-  /*margin-top: 10%;*/
   display: block;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  opacity: 0.8;
+}
+
+main .event__cont__detail__imgcon:hover{
+    opacity: 1;
 }
 
 main .event__cont__detail__imgcon img{
@@ -466,24 +472,40 @@ main .event__cont__detail--title {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  text-decoration: none;
+}
+
+main .event__cont__detail--title a{
+  color: #fff;
+  text-decoration: none;
+}
+
+main .event__cont__detail--title a:hover{
+  text-decoration: underline;
 }
 
 main .event__cont__detail--text {
   margin: 0 auto;
   width: 90%;
+  overflow: hidden;
   color: #fff;
   font-size: 0.85em;
+  text-overflow: ellipsis;
 }
 
 main .event__cont__detail--link {
-  text-align: left;
+  text-align: right;
   margin-bottom: 5%;
 }
+
 main .event__cont__detail--link a {
-  color: #fff;
+  color: #ddd;
+  text-decoration: none;
 }
+
 main .event__cont__detail--link a:hover {
   color: #fff;
+  text-decoration: underline;
 }
 
 
