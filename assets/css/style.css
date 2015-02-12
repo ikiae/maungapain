@@ -1,9 +1,35 @@
+textarea,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: 'Open Sans';
+}
+
+body{
+	background: #cdcdcd;
+}
+
+/*=====================
+  Navbar
+=====================*/
 .navbar{
 	background: #333333;
+	color: #fff;
 }
 
 .nav-link{
 	padding: 5px 0 5px;
+	color: #f00;
 }
 
 .nav-link a{
@@ -11,7 +37,7 @@
 }
 
 .nav-link:hover {
-	background: #ffffff;
+	background: #eeeeee;
 	color: #ffffff;
 }
 
@@ -31,16 +57,18 @@
 
 .navbar-form{
 	padding: 5px 0;
-	margin-right: 100px;
+	margin-right: 3em;
+	float: right;
 }
 
 .navbar-left{
 	margin-left: 2em;
 }
 
-body{
-	background: #cccccc;
-}
+
+/*=======================
+  Container
+=======================*/
 
 .container{
 	min-height: 700px;
@@ -50,33 +78,99 @@ body{
 	text-align: center;
 }
 
-.event__cont__detail{
-	width: 100%;
-	background: #777777;
+.section-title .btn{
+	position: relative;
+	margin: 0 auto;
 }
 
-.event__cont__detail__imgcon img{
+/*==========================
+  Events
+==========================*/
+
+.col-md-4 img{
 	width: 100%;
 }
 
-.event__cont__detail__imgcon img:hover{
+.event__detail{
+	width: 100%;
+	background: #eeeeee;
+	color: #000000;
+	margin-bottom: 2em;
+}
+
+.event__detail__imgcon img{
+	width: 100%;
+}
+
+.event__detail__imgcon img:hover{
 	opacity: 0.8;
 }
+
+.event__detail--title{
+	font-size: 1.5em;
+	font-weight: bold;
+	display: inline-block;
+	width: 90%;
+	margin-left: 0.5em;
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
+}
+
+.event__detail--title a{
+	color: #dd0000;
+	text-decoration: none;
+}
+
+.event__detail--title a:hover{
+	text-decoration: underline;
+}
+
+.event__detail--text{
+	display: inline-block;
+	width: 90%;
+	margin-left: 0.8em;
+	margin-bottom: 0.5em;
+}
+
+.event__detail--link{
+	display: inline-block;
+	text-align: right;
+}
+
+.event__detail--link a{
+	color: #dd0000;
+	text-decoration: none;
+}
+
+.event__detail--link a:hover{
+	text-decoration: underline;
+}
+/*==
+========================
+  No Event
+==========================*/
+.jumbotron{
+	margin-top: 2em;
+}
+
+.noevent{
+	text-align: center;
+	font-weight: bold;
+	color: #dd0000;
+}
+
+/*========================
+  Buttons
+========================*/
 
 .login{
 	width: 40%;
 	margin: 0 auto;
 }
 
-.copyright h3 {
-	text-align: center;
-}
-
-.bottom-menu {
-	background: #424242;
-	color: #ffffff;
-	padding: 5px 0 5px;
-	margin: 0px 0 0 0;
+.register{
+	width: 60%;
+	margin: 0 auto;
 }
 
 .btn--login{
@@ -88,4 +182,41 @@ body{
 .btn--login:hover{
 	background: #dd0000;
 	color: #ffffff;
+}
+
+.btn--register{
+	background: #ff0000;
+	color: #eeeeee;
+	padding: 10px 60px;
+}
+
+/*====================
+  Form
+====================*/
+
+.form-group span{
+	color: #f00;
+}
+
+.required{
+	text-align: center;
+}
+
+.article{
+	background: #eeeeee;
+}
+
+/*=======================
+  Footer
+=======================*/
+
+.copyright h3 {
+	text-align: center;
+}
+
+.bottom-menu {
+	background: #424242;
+	color: #ffffff;
+	padding: 5px 0 5px;
+	margin: 0px 0 0 0;
 }
