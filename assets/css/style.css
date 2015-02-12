@@ -1,0 +1,91 @@
+.navbar{
+	background: #333333;
+}
+
+.nav-link{
+	padding: 5px 0 5px;
+}
+
+.nav-link a{
+	color: #f00;
+}
+
+.nav-link:hover {
+	background: #ffffff;
+	color: #ffffff;
+}
+
+.navbar-content{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.navbar-brand{
+	padding: 10px 0 10px;
+	opacity: 0.8;
+}
+
+.navbar-brand:hover{
+	opacity: 1;
+}
+
+.navbar-form{
+	padding: 5px 0;
+	margin-right: 100px;
+}
+
+.navbar-left{
+	margin-left: 2em;
+}
+
+body{
+	background: #cccccc;
+}
+
+.container{
+	min-height: 700px;
+}
+
+.section-title h1{
+	text-align: center;
+}
+
+.event__cont__detail{
+	width: 100%;
+	background: #777777;
+}
+
+.event__cont__detail__imgcon img{
+	width: 100%;
+}
+
+.event__cont__detail__imgcon img:hover{
+	opacity: 0.8;
+}
+
+.login{
+	width: 40%;
+	margin: 0 auto;
+}
+
+.copyright h3 {
+	text-align: center;
+}
+
+.bottom-menu {
+	background: #424242;
+	color: #ffffff;
+	padding: 5px 0 5px;
+	margin: 0px 0 0 0;
+}
+
+.btn--login{
+	background: #aa0000;
+	color: #eeeeee;
+	padding: 10px 60px;
+}
+
+.btn--login:hover{
+	background: #dd0000;
+	color: #ffffff;
+}

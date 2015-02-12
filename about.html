@@ -9,40 +9,55 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/normalize.css">
-        <link rel="stylesheet" href="assets/css/main.css">
         <script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
         <header>
-             <div class="main inline-box">
-                <a class="main__logo" href="home.html"> <img src="assets/img/logo.png" alt=""> </a>
-                <!-- <input class="main__search inline-box" type="search" placeholder="Search events" /> -->
-                <ul class="main__table list-nostyle main__table--left">
-                    <!-- <li class="main__table__tab"><a href="home.html"> Home</a></li> -->
-                    <li class="main__table__tab"><a href="events.html"> All Events</a></li>
-                    <li class="main__table__tab"><a href="community.html"> Communities</a></li>
-                    <li class="main__table__tab"><a href="about.html"> About</a></li>
-                </ul>
-                <input class="main__search inline-box" type="search" placeholder="Search events" />
-                <ul class="main__table list-nostyle main__table--right">
-                    <li class="main__table__tab"><a href="login.html"> Login </a></li>
-                    <li class="main__table__tab"><a href="register.html"> Register </a></li>
-                </ul>
-            </div>
+             <nav class="navbar navbar-default" role="navigation">
+                <div class="navbar-content">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="home.html"><img src="assets/img/logo.png" alt=""></a>
+                    </div>
+                
+                    <ul class="nav navbar-nav navbar-left">
+                        <li class="nav-link"><a href="events.html"> All Events</a></li>
+                        <li class="nav-link"><a href="community.html"> Communities</a></li>
+                        <li class="nav-link"><a href="about.html"> About</a></li>
+                    </ul>                
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-link"><a href="login.html"> Login </a></li>
+                        <li class="nav-link"><a href="register.html"> Register </a></li>
+                    </ul>
+                    <form class="navbar-form navbar-right" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search events">
+                        </div>
+                    </form>     
+                </div>
+            </nav>
         </header>
 
 
         <main>
-            <div class="main__title">About</div>
-            <div class="about"> Nam orci urna, vulputate quis urna in, posuere aliquet arcu. Phasellus convallis, risus ut pellentesque condimentum, ex arcu tempor arcu, at rutrum leo massa sit amet libero. Sed fermentum neque vel posuere varius. Aenean molestie pharetra accumsan. Vestibulum eu lacinia urna, at ornare mi. In consectetur eleifend nibh, id dictum erat dignissim vel. Aenean sed lacus a nibh facilisis tempus. Donec hendrerit, erat eu euismod tristique, dolor libero interdum enim, aliquet interdum erat orci eu quam. Aliquam commodo luctus nibh, sit amet bibendum neque gravida a. Nam a luctus nisl, nec finibus tortor. Vestibulum aliquam, nulla fermentum rhoncus cursus, nisi mi rhoncus ante, mattis gravida justo nibh a nibh. Aliquam pharetra mattis neque at vestibulum. Aenean nec purus purus. Nulla vel lacinia purus. Donec in lectus elementum, malesuada turpis non, vestibulum erat. </div>
+            <div class="container">
+                <section class="section-padding">
+                    <div class="section-title"><h1>About</h1></div>
+                    <div class="section-article">
+                        <div class="jumbotron">
+                            <p>Nam orci urna, vulputate quis urna in, posuere aliquet arcu. Phasellus convallis, risus ut pellentesque condimentum, ex arcu tempor arcu, at rutrum leo massa sit amet libero. Sed fermentum neque vel posuere varius. Aenean molestie pharetra accumsan. Vestibulum eu lacinia urna, at ornare mi. In consectetur eleifend nibh, id dictum erat dignissim vel. Aenean sed lacus a nibh facilisis tempus. Donec hendrerit, erat eu euismod tristique, dolor libero interdum enim, aliquet interdum erat orci eu quam. Aliquam commodo luctus nibh, sit amet bibendum neque gravida a. Nam a luctus nisl, nec finibus tortor. Vestibulum aliquam, nulla fermentum rhoncus cursus, nisi mi rhoncus ante, mattis gravida justo nibh a nibh. Aliquam pharetra mattis neque at vestibulum. Aenean nec purus purus. Nulla vel lacinia purus. Donec in lectus elementum, malesuada turpis non, vestibulum erat.</p>
+                        </div>  
+                    </div>
+                </section>
+            </div>
         </main>
 
 
-        <footer>
-            <div class="footer__cp">@2014 Flipbox Studio</div>
-        </footer>
+        <div class="bottom-menu">
+           <div class="copyright"><h3>@2014 Flipbox Studio</h3></div> 
+        </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>

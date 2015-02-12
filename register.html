@@ -11,9 +11,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link href="assets/css/jquery.bxslider.css" rel="stylesheet" />
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/normalize.css">
-        <link rel="stylesheet" href="assets/css/main.css">
         <script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
@@ -24,92 +24,106 @@
         <!-- Add your site or application content here -->
 
         <header>
-             <div class="main inline-box">
-                <a class="main__logo" href="home.html"> <img src="assets/img/logo.png" alt=""> </a>
-                <!-- <input class="main__search inline-box" type="search" placeholder="Search events" /> -->
-                <ul class="main__table list-nostyle main__table--left">
-                    <!-- <li class="main__table__tab"><a href="home.html"> Home</a></li> -->
-                    <li class="main__table__tab"><a href="events.html"> All Events</a></li>
-                    <li class="main__table__tab"><a href="community.html"> Communities</a></li>
-                    <li class="main__table__tab"><a href="about.html"> About</a></li>
-                </ul>
-                <input class="main__search inline-box" type="search" placeholder="Search events" />
-                <ul class="main__table list-nostyle main__table--right">
-                    <li class="main__table__tab"><a href="login.html"> Login </a></li>
-                    <li class="main__table__tab"><a href="register.html"> Register </a></li>
-                </ul>
-            </div>
+             <nav class="navbar navbar-default" role="navigation">
+                <div class="navbar-content">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="home.html"><img src="assets/img/logo.png" alt=""></a>
+                    </div>
+                
+                    <ul class="nav navbar-nav navbar-left">
+                        <li class="nav-link"><a href="events.html"> All Events</a></li>
+                        <li class="nav-link"><a href="community.html"> Communities</a></li>
+                        <li class="nav-link"><a href="about.html"> About</a></li>
+                    </ul>                
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-link"><a href="login.html"> Login </a></li>
+                        <li class="nav-link"><a href="register.html"> Register </a></li>
+                    </ul>
+                    <form class="navbar-form navbar-right" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search events">
+                        </div>
+                    </form>     
+                </div>
+            </nav>
         </header>
 
-
+        
         <main>
-            <div class="main__title"> Register </div>
-            <form class="form">
-                <div class="form__row"> 
-                    <span>* required</span>
-                </div>
-                <div class="form__row"> 
-                    <label class="form__row__label" for="Name">Name <span>*</span> </label>
-                    <input class="form__row__input" id="Name" type="text">
-                </div>
-                <div class="form__row">
-                    <label class="form__row__label" for="Role">Role</label>
-                    <input class="form__row__input" id="Role" type="text">
-                </div>
-                <div class="form__row"> 
-                    <label class="form__row__label" for="Parent">Parent</label>
-                    <input class="form__row__input" id="Parent" type="text">
-                </div>
-                <div class="form__row"> 
-                    <label class="form__row__label" for="Username">Username <span>*</span> </label>
-                    <input class="form__row__input" id="Username" type="text">
-                </div>
-                <div class="form__row">
-                    <label class="form__row__label" for="Password">Password <span>*</span> </label>
-                    <input class="form__row__input" id="Password" type="text">
-                </div>
-                <div class="form__row">
-                    <label class="form__row__label" for="Confirm Password">Confirm  Password <span>*</span> </label>
-                    <input class="form__row__input" id="Confirm" type="text">
-                </div>
-                <div class="form__row"> 
-                    <label class="form__row__label" for="Email">Email <span>*</span> </label>
-                    <input class="form__row__input" id="Email" type="text">
-                </div>
-                <div class="form__row">
-                    <label class="form__row__label" for="Phone">Phone <span>*</span> </label>
-                    <input class="form__row__input" id="Phone" type="text">
-                </div>
-                <div class="form__row"> 
-                    <label class="form__row__label" for="Address">Address <span>*</span> </label>
-                    <input class="form__row__input" id="Address" type="text">
-                </div>
-                <div class="form__row">
-                    <label class="form__row__label" for="City">City <span>*</span> </label>
-                    <input class="form__row__input" id="City" type="text">
-                </div>
-                <div class="form__row">
-                    <label class="form__row__label" for="LogoURL">Logo URL</label>
-                    <input class="form__row__input" id="LogoURL" type="text">
-                </div>
-                <div class="form__row">
-                    <label class="form__row__label" for="Description">Description</label>
-                    <input class="form__row__input" id="Description" type="text">
-                </div>
-                <div class="form__row">
-                    <div class="grid">
-                        <div class="grid__col grid__col--6">
-                            <button class="btn btn--register btn--block" id="login">Submit</button>
-                        </div>
-                    </div>   
-                </div>
-            </form>
+            <div class="container login">
+                <section class="section-padding">
+                    <div class="section-title"><h1>Register</h1></div>
+                    <div class="section-article">
+                        <form class="form">
+                            <div class="form-group"> 
+                                <span>* required</span>
+                            </div>
+                            <div class="form-group"> 
+                                <label for="Name">Name <span>*</span> </label>
+                                <input class="form-control" id="Name" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="Role">Role</label>
+                                <input class="form-control" id="Role" type="text">
+                            </div>
+                            <div class="form-group"> 
+                                <label for="Parent">Parent</label>
+                                <input class="form-control" id="Parent" type="text">
+                            </div>
+                            <div class="form-group"> 
+                                <label for="Username">Username <span>*</span> </label>
+                                <input class="form-control" id="Username" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="Password">Password <span>*</span> </label>
+                                <input class="form-control" id="Password" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="Confirm Password">Confirm  Password <span>*</span> </label>
+                                <input class="form-control" id="Confirm" type="text">
+                            </div>
+                            <div class="form-group"> 
+                                <label for="Email">Email <span>*</span> </label>
+                                <input class="form-control" id="Email" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="Phone">Phone <span>*</span> </label>
+                                <input class="form-control" id="Phone" type="text">
+                            </div>
+                            <div class="form-group"> 
+                                <label for="Address">Address <span>*</span> </label>
+                                <input class="form-control" id="Address" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label class="form__row__label" for="City">City <span>*</span> </label>
+                                <input class="form-control" id="City" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label class="form__row__label" for="LogoURL">Logo URL</label>
+                                <input class="form-control" id="LogoURL" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="Description">Description</label>
+                                <input class="form-control" id="Description" type="text">
+                            </div>
+                            <div class="form-group">
+                                <div class="grid">
+                                    <div class="grid__col grid__col--6">
+                                        <button class="btn btn--register btn--block" id="login">Submit</button>
+                                    </div>
+                                </div>   
+                            </div>
+                        </form>    
+                    </div>
+                </section>
+            </div>
+
         </main>
 
 
-        <footer>
-            <div class="footer__cp">@2014 Flipbox Studio</div>
-        </footer>
+        <div class="bottom-menu">
+           <div class="copyright"><h3>@2014 Flipbox Studio</h3></div> 
+        </div>
 
         <!-- jQuery library (served from Google) -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
